@@ -1,0 +1,31 @@
+version: "3"
+
+services:
+  badge42:
+    image: 'bosseur31/badge42:latest'
+    container_name: badge42
+    restart: always
+    ports:
+      - '3000:3000'
+    networks:
+      - badge42_network
+
+  badge42_db:
+    image: mariadb
+    container_name: badge42_db
+    restart: always
+    networks:
+      - badge42_network
+    volumes:
+      - /media/data/mysql/badge42_db:/var/lib/mysql
+      - /etc/localtime:/etc/localtime:ro
+    environment:
+      - MYSQL_ROOT_PASSWORD
+      - MYSQL_PASSWORD
+      - MYSQL_DATABASE
+      - MYSQL_USER
+
+networks:
+  badge42_network:
+    driver: bridge
+    external: true
