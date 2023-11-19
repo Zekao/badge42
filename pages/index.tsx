@@ -8,6 +8,7 @@ import { useContext } from "react";
 import axios from "axios";
 import getCoalitions from "../lib/getCoalitions";
 import ProjectScore from "../components/badge/ProjectScore";
+import Config from "next.config"
 
 const StatsWrapper = ({ data }: StatsProps) => {
   const [isShow, setIsShow] = useState(false);
@@ -153,8 +154,9 @@ const Home = () => {
     }
   }, [selectedCursus, data.extended42Data.coalitions.length]);
 
-  const statsUrl = `https://badge42.vercel.app/api/v2/${data.id}/stats?cursusId=${cursusId}&coalitionId=${coalitionId}`;
-  const projectUrl = `https://badge42.vercel.app/api/v2/${data.id}/project`;
+  const BASE_URL = Config.env.base_url;
+  const statsUrl = `${BASE_URL}/api/v2/${data.id}/stats?cursusId=${cursusId}&coalitionId=${coalitionId}`;
+  const projectUrl = `${BASE_URL}/api/v2/${data.id}/project`;
 
   const projectList = useMemo(
     () =>
@@ -252,13 +254,13 @@ const Home = () => {
       <label>
         <p className="text-neutral-600">*markdown</p>{" "}
         <Code
-          code={`[![${data.extended42Data.login}'s 42 stats](${statsUrl})](https://github.com/JaeSeoKim/badge42)`}
+          code={`[![${data.extended42Data.login}'s 42 stats](${statsUrl})](${Config.env.github_repo})`}
         />
       </label>
       <label>
         <p className="text-neutral-600">*html</p>{" "}
         <Code
-          code={`<a href="https://github.com/JaeSeoKim/badge42"><img src="${statsUrl}" alt="${data.extended42Data.login}'s 42 stats" /></a>`}
+          code={`<a href="${Config.env.github_repo}"><img src="${statsUrl}" alt="${data.extended42Data.login}'s 42 stats" /></a>`}
         />
       </label>
       <hr />
@@ -283,13 +285,13 @@ const Home = () => {
           <label>
             <p className="text-neutral-600">*markdown</p>{" "}
             <Code
-              code={`[![${data.extended42Data.login}'s 42 ${project.project.name} Score](${projectUrl}/${project.id})](https://github.com/JaeSeoKim/badge42)`}
+              code={`[![${data.extended42Data.login}'s 42 ${project.project.name} Score](${projectUrl}/${project.id})](${Config.env.github_repo})`}
             />
           </label>
           <label>
             <p className="text-neutral-600">*html</p>{" "}
             <Code
-              code={`<a href="https://github.com/JaeSeoKim/badge42"><img src="${projectUrl}/${project.id}" alt="${data.extended42Data.login}'s 42 ${project.project.name} Score" /></a>`}
+              code={`<a href="${Config.env.github_repo}"><img src="${projectUrl}/${project.id}" alt="${data.extended42Data.login}'s 42 ${project.project.name} Score" /></a>`}
             />
           </label>
         </details>
