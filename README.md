@@ -1,35 +1,43 @@
 <div align="center">
-  <h1>Maintainer Announcement</h1>
-  <p>I am currently serving in the military, <strike>(In South Korea, men are obligated to serve in the military…)</strike> so maintenance is difficult.</p>
-  <p>The service may not function properly because it exceeds 100% of the free API usage in Vercel. <strike>I have an idea to improve the service, but I don't have the environment and time to develop it :(</strike></p>
-  <p>If you want to maintain the service, please contact to me.</p>
-</div>
-
----
-
-<div align="center">
-  <img src="/public/badge42_logo.svg" height="128px" alt="badge42 logo" >
+  <img src="./public/badge42_logo.svg" height="128px" alt="badge42 logo" >
   <h1>Badge42</h1>
-  <p>🚀 Dynamically generated 42 badge for your git readmes.</p>
+  <p>🚀 Dynamically generated 42 badge for your git readmes. Fork of incredible work of <a href="https://github.com/JaeSeoKim">JaeSeoKim</a></p>
 </div>
 
 ## 👀 Preview
 
-[![jaeskim's 42 stats](https://badge42.vercel.app/api/v2/cl0yx1v0j0158ns5shlllmdvb/stats?cursusId=21&coalitionId=85)](https://github.com/JaeSeoKim/badge42)
+[![amaisonn's 42 stats](https://badge42.coday.fr/api/v2/clp5ewp94000601t6olncbq6z/stats?cursusId=21&coalitionId=319)](https://github.com/Coday-meric/badge42)
 
-[![jaeskim's 42 stats](https://badge42.vercel.app/api/v2/cl0yx1v0j0158ns5shlllmdvb/stats?cursusId=9&coalitionId=piscine)](https://github.com/JaeSeoKim/badge42)
+[![amaisonn's 42 stats](https://badge42.coday.fr/api/v2/clp5ewp94000601t6olncbq6z/stats?cursusId=9&coalitionId=piscine)](https://github.com/Coday-meric/badge42)
 
-jaeskim's 42 ft_printf Score - [![jaeskim's 42 ft_printf Score](https://badge42.vercel.app/api/v2/cl0yx1v0j0158ns5shlllmdvb/project/2004625)](https://github.com/JaeSeoKim/badge42)
+amaisonn 42 minishell Score - [![amaisonn's 42 minishell Score](https://badge42.coday.fr/api/v2/clp5ewp94000601t6olncbq6z/project/3077930)](https://github.com/Coday-meric/badge42)
+
+amaisonn 42 piscine BSG Score - [![amaisonn's 42 C Piscine BSQ Score](https://badge42.coday.fr/api/v2/clp5ewp94000601t6olncbq6z/project/2917231)](https://github.com/Coday-meric/badge42)
 
 ## 🤓 Usage
 
-1. Go to <https://badge42.vercel.app/> and sign in!
-2. generat code snippet for your profile card
+1. Go to <https://badge42.coday.fr/> and sign in!
+2. Generate code snippet for your profile card
 3. Copy-paste this into your markdown content, and that's it. Simple 🥳
 
-## Contributors ✨
+## 🤓 Self-Hosted
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+1. Clone project.
+2. Create Mysql DB.
+3. Create 42 Intra API access and Github API access.
+4. Edit [.env.sample](./.env.sample) file and rename .env.
+5. Edit [next.config.js](./next.config.js) file with your URL app.
+6. `yarn install && yarn db:generate && yarn db:push && yarn build && yarn start` or use Dockerfile and docker-compose.yml (For docker hosting run `yarn db:push` after container run). 
+7. Go to your url app and sign in!
+8. Generate code snippet for your profile card 
+9. Copy-paste this into your markdown content, and that's it. Simple 🥳
+
+## Original Contributors ✨
+
+Special thanks original creator :
+<td align="center"><a href="https://github.com/JaeSeoKim"><img src="https://avatars.githubusercontent.com/u/48559454?v=4" width="100px;" alt=""/><br /><sub><b>JaeSeoKim</b></sub></a> <a href="https://github.com/JaeSeoKim" title="Creator">💻</a></td>
+
+And thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
