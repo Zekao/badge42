@@ -10,9 +10,9 @@
 
 [![amaisonn's 42 stats](https://badge42.coday.fr/api/v2/clp5ewp94000601t6olncbq6z/stats?cursusId=9&coalitionId=piscine)](https://github.com/Coday-meric/badge42)
 
-amaisonn 42 minishell Score - [![amaisonn's 42 minishell Score](https://badge42.coday.fr/api/v2/clp5ewp94000601t6olncbq6z/project/3077930)](https://github.com/Coday-meric/badge42)
+amaisonn 42 cursus minishell Score - [![amaisonn's 42 minishell Score](https://badge42.coday.fr/api/v2/clp5ewp94000601t6olncbq6z/project/3077930)](https://github.com/Coday-meric/badge42)
 
-amaisonn 42 piscine BSG Score - [![amaisonn's 42 C Piscine BSQ Score](https://badge42.coday.fr/api/v2/clp5ewp94000601t6olncbq6z/project/2917231)](https://github.com/Coday-meric/badge42)
+amaisonn 42 piscine BSQ Score - [![amaisonn's 42 C Piscine BSQ Score](https://badge42.coday.fr/api/v2/clp5ewp94000601t6olncbq6z/project/2917231)](https://github.com/Coday-meric/badge42)
 
 ## 🤓 Usage
 
