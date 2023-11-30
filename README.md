@@ -14,7 +14,7 @@ amaisonn 42 cursus minishell Score - [![amaisonn's 42 minishell Score](https://b
 
 amaisonn 42 piscine BSQ Score - [![amaisonn's 42 C Piscine BSQ Score](https://badge42.coday.fr/api/v2/clp5ewp94000601t6olncbq6z/project/2917231)](https://github.com/Coday-meric/badge42)
 
-## 🤓 Usage
+## 🤓 Easy Usage
 
 1. Go to <https://badge42.coday.fr/> and sign in!
 2. Generate code snippet for your profile card
