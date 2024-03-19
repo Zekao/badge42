@@ -1,31 +1,44 @@
-version: "3"
+version: "3.9"
 
 services:
-  badge42:
-    image: 'bosseur31/badge42:latest'
+  web:
+    build: .
     container_name: badge42
-    restart: always
-    ports:
-      - '3000:3000'
+    depends_on:
+      - db
+    restart: unless-stopped
+    lebels:
+      traefik.enable: true
+      traefik.http.routers.badge42.entrypoints: https
+      traefik.http.routers.badge42.rule: Host(`badge.nimon.fr`)
+      traefik.http.routers.badge42.tls: true
+      traefik.http.routers.badge42.tls.certresolver: letsencrypt
+      traefik.http.services.badge42.loadbalancer.server.port: 3000
     networks:
-      - badge42_network
+      - default
+      - traefik_traefik
+    environment:
+      DATABASE_URL: "postgres://YOUR_USER:YOUR_PASSWD@db:5432/badge42"
+      NEXTAUTH_URL: "https://badge.nimon.fr"
+      NEXTAUTH_SECRET: YOUR_RANDOM_SECRET
+      FORTY_TWO_CLIENT_ID: YOUR_42API_CLIENT
+      FORTY_TWO_CLIENT_SECRET: YOUR_42API_SECRET
+    
 
-  badge42_db:
-    image: mariadb
-    container_name: badge42_db
-    restart: always
+  db:
+    image: postgres
+    restart: unless-stopped
     networks:
-      - badge42_network
+      - default
     volumes:
       - /media/data/mysql/badge42_db:/var/lib/mysql
       - /etc/localtime:/etc/localtime:ro
     environment:
-      - MYSQL_ROOT_PASSWORD
-      - MYSQL_PASSWORD
-      - MYSQL_DATABASE
-      - MYSQL_USER
+      POSTGRES_USER: "YOUR_USER"
+      POSTGRES_PASSWORD: "YOUR_PASSWD"
+      POSTGRES_DB: "badge42"
 
 networks:
-  badge42_network:
-    driver: bridge
+  default:
+  traefik_traefik:
     external: true
