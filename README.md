@@ -6,17 +6,17 @@
 
 ## 👀 Preview
 
-[![amaisonn's 42 stats](https://badge42.coday.fr/api/v2/clp5ewp94000601t6olncbq6z/stats?cursusId=21&coalitionId=319)](https://github.com/Coday-meric/badge42)
+[![nsimon's 42 stats](https://badge.nimon.fr/api/v2/cltxm25zz00657dqg1x1p6bnn/stats?cursusId=21&coalitionId=46)](https://github.com/Nimon77/badge42)
 
-[![amaisonn's 42 stats](https://badge42.coday.fr/api/v2/clp5ewp94000601t6olncbq6z/stats?cursusId=9&coalitionId=piscine)](https://github.com/Coday-meric/badge42)
+[![nsimon's 42 stats](https://badge.nimon.fr/api/v2/cltxm25zz00657dqg1x1p6bnn/stats?cursusId=9&coalitionId=11)](https://github.com/Nimon77/badge42)
 
-amaisonn 42 cursus minishell Score - [![amaisonn's 42 minishell Score](https://badge42.coday.fr/api/v2/clp5ewp94000601t6olncbq6z/project/3077930)](https://github.com/Coday-meric/badge42)
+nsimon's 42 minishell Score - [![nsimon's 42 minishell Score](https://badge.nimon.fr/api/v2/cltxm25zz00657dqg1x1p6bnn/project/2075133)](https://github.com/Nimon77/badge42)
 
-amaisonn 42 piscine BSQ Score - [![amaisonn's 42 C Piscine BSQ Score](https://badge42.coday.fr/api/v2/clp5ewp94000601t6olncbq6z/project/2917231)](https://github.com/Coday-meric/badge42)
+nsimon's 42 C Piscine Final Exam Score - [![nsimon's 42 C Piscine Final Exam Score](https://badge.nimon.fr/api/v2/cltxm25zz00657dqg1x1p6bnn/project/1521443)](https://github.com/Nimon77/badge42)
 
 ## 🤓 Easy Usage
 
-1. Go to <https://badge42.coday.fr/> and sign in!
+1. Go to <https://badge.nimon.fr/> and sign in!
 2. Generate code snippet for your profile card
 3. Copy-paste this into your markdown content, and that's it. Simple 🥳
 
