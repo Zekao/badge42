@@ -1,22 +1,20 @@
-version: "3.9"
-
+version: '3.9'
 services:
   web:
     build: .
-    container_name: badge42
     depends_on:
       - db
+    networks:
+      - default
+      - traefik_traefik
     restart: unless-stopped
-    lebels:
+    labels:
       traefik.enable: true
       traefik.http.routers.badge42.entrypoints: https
       traefik.http.routers.badge42.rule: Host(`badge.nimon.fr`)
       traefik.http.routers.badge42.tls: true
       traefik.http.routers.badge42.tls.certresolver: letsencrypt
       traefik.http.services.badge42.loadbalancer.server.port: 3000
-    networks:
-      - default
-      - traefik_traefik
     environment:
       DATABASE_URL: "postgres://YOUR_USER:YOUR_PASSWD@db:5432/badge42"
       NEXTAUTH_URL: "https://badge.nimon.fr"
@@ -31,12 +29,15 @@ services:
     networks:
       - default
     volumes:
-      - /media/data/mysql/badge42_db:/var/lib/mysql
+      - db:/var/lib/postgresql/data
       - /etc/localtime:/etc/localtime:ro
     environment:
       POSTGRES_USER: "YOUR_USER"
       POSTGRES_PASSWORD: "YOUR_PASSWD"
       POSTGRES_DB: "badge42"
+
+volumes:
+  db:
 
 networks:
   default:
