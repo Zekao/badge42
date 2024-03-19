@@ -5,7 +5,6 @@ services:
     depends_on:
       - db
     networks:
-      - default
       - traefik_traefik
     restart: unless-stopped
     labels:
@@ -21,13 +20,14 @@ services:
       NEXTAUTH_SECRET: YOUR_RANDOM_SECRET
       FORTY_TWO_CLIENT_ID: YOUR_42API_CLIENT
       FORTY_TWO_CLIENT_SECRET: YOUR_42API_SECRET
-    
+      GITHUB_ID: "YOUR_GITHUB_APP_ID"
+      GITHUB_SECRET: "YOUR_GITHUB_APP_SECRET"
 
   db:
     image: postgres
     restart: unless-stopped
     networks:
-      - default
+      - traefik_traefik
     volumes:
       - db:/var/lib/postgresql/data
       - /etc/localtime:/etc/localtime:ro
@@ -40,6 +40,5 @@ volumes:
   db:
 
 networks:
-  default:
   traefik_traefik:
     external: true
