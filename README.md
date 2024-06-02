@@ -6,17 +6,17 @@
 
 ## 👀 Preview
 
-[![nsimon's 42 stats](https://badge.nimon.fr/api/v2/cltxm25zz00657dqg1x1p6bnn/stats?cursusId=21&coalitionId=46)](https://github.com/Nimon77/badge42)
+[![emaugale's 42 stats](https://badge.emaugale.com/api/v2/clwxuhc2y041701qkg4k4b3gp/stats?cursusId=21&coalitionId=48)](https://github.com/Zekao/badge42)
 
-[![nsimon's 42 stats](https://badge.nimon.fr/api/v2/cltxm25zz00657dqg1x1p6bnn/stats?cursusId=9&coalitionId=11)](https://github.com/Nimon77/badge42)
+[![emaugale's 42 stats](https://badge.emaugale.com/api/v2/clwxuhc2y041701qkg4k4b3gp/stats?cursusId=9&coalitionId=107)](https://github.com/Zekao/badge42)
 
-nsimon's 42 minishell Score - [![nsimon's 42 minishell Score](https://badge.nimon.fr/api/v2/cltxm25zz00657dqg1x1p6bnn/project/2075133)](https://github.com/Nimon77/badge42)
+emaugale's 42 kfs-4 Score - [![emaugale's 42 kfs-4 Score](https://badge.emaugale.com/api/v2/clwxuhc2y041701qkg4k4b3gp/project/3098485)](https://github.com/Zekao/badge42)
 
-nsimon's 42 C Piscine Final Exam Score - [![nsimon's 42 C Piscine Final Exam Score](https://badge.nimon.fr/api/v2/cltxm25zz00657dqg1x1p6bnn/project/1521443)](https://github.com/Nimon77/badge42)
+emaugale's 42 C Piscine Final Exam Score [![emaugale's 42 C Piscine Final Exam Score](https://badge.emaugale.com/api/v2/clwxuhc2y041701qkg4k4b3gp/project/2255496)](https://github.com/Zekao/badge42)
 
 ## 🤓 Easy Usage
 
-1. Go to <https://badge.nimon.fr/> and sign in!
+1. Go to <https://badge.emaugale.com/> and sign in!
 2. Generate code snippet for your profile card
 3. Copy-paste this into your markdown content, and that's it. Simple 🥳
 
@@ -27,9 +27,9 @@ nsimon's 42 C Piscine Final Exam Score - [![nsimon's 42 C Piscine Final Exam Sco
 3. Create 42 Intra API access and Github API access.
 4. Edit [.env.sample](./.env.sample) file and rename .env.
 5. Edit [next.config.js](./next.config.js) file with your URL app.
-6. `yarn install && yarn db:generate && yarn db:push && yarn build && yarn start` or use Dockerfile and docker-compose.yml (For docker hosting run `yarn db:push` after container run). 
+6. `yarn install && yarn db:generate && yarn db:push && yarn build && yarn start` or use Dockerfile and docker-compose.yml (For docker hosting run `yarn db:push` after container run).
 7. Go to your url app and sign in!
-8. Generate code snippet for your profile card 
+8. Generate code snippet for your profile card
 9. Copy-paste this into your markdown content, and that's it. Simple 🥳
 
 ## Original Contributors ✨
