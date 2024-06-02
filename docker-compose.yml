@@ -10,13 +10,13 @@ services:
     labels:
       traefik.enable: true
       traefik.http.routers.badge42.entrypoints: https
-      traefik.http.routers.badge42.rule: Host(`badge.nimon.fr`)
+      traefik.http.routers.badge42.rule: Host(`badge.emaugale.com`)
       traefik.http.routers.badge42.tls: true
       traefik.http.routers.badge42.tls.certresolver: letsencrypt
       traefik.http.services.badge42.loadbalancer.server.port: 3000
     environment:
       DATABASE_URL: "postgres://YOUR_USER:YOUR_PASSWD@db:5432/badge42"
-      NEXTAUTH_URL: "https://badge.nimon.fr"
+      NEXTAUTH_URL: "https://badge.emaugale.com"
       NEXTAUTH_SECRET: YOUR_RANDOM_SECRET
       FORTY_TWO_CLIENT_ID: YOUR_42API_CLIENT
       FORTY_TWO_CLIENT_SECRET: YOUR_42API_SECRET
