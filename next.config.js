@@ -5,8 +5,8 @@ const nextConfig = {
     outputStandalone: true,
   },
   env: {
-    base_url:'https://badge.nimon.fr',
-    github_repo:'https://github.com/Nimon77/badge42'
+    base_url:'https://badge.emaugale.com',
+    github_repo:'https://github.com/Zekao/badge42'
   },
   output: 'standalone',
 };
